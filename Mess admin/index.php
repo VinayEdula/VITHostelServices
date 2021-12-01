@@ -17,7 +17,7 @@ $_SESSION['alogin']=$_POST['username'];
 $_SESSION['id']=$num['id'];
 $host=$_SERVER['HTTP_HOST'];
 $uri=rtrim(dirname($_SERVER['PHP_SELF']),'/\\');
-header("location:https://$host$uri/$extra");
+header("location:https://$host$uri/change-password.php");
 exit();
 }
 else
