@@ -93,7 +93,7 @@ while($row=mysqli_fetch_array($query))
 										
 											<td><?php echo htmlentities($row['regDate']);?></td>
 
-<td><a href="javascript:void(0);" onClick="popUpWindow('http://localhost/VHS/Mess admin/userprofile.php?uid=<?php echo htmlentities($row['id']);?>');" title="View Details">
+<td><a href="javascript:void(0);" onClick="popUpWindow('./userprofile.php?uid=<?php echo htmlentities($row['id']);?>');" title="View Details">
 <button type="button" class="btn btn-primary">View Detials</button>
 											</a>
 
