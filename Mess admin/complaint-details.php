@@ -152,11 +152,11 @@ while($rw=mysqli_fetch_array($ret))
 											<?php if($row['status']=="closed"){
 
 												} else {?>
-<a href="javascript:void(0);" onClick="popUpWindow('http://localhost/VHS/Mess admin/updatecomplaint.php?cid=<?php echo htmlentities($row['complaintNumber']);?>');" title="Take Action">
+<a href="javascript:void(0);" onClick="popUpWindow('./updatecomplaint.php?cid=<?php echo htmlentities($row['complaintNumber']);?>');" title="Take Action">
 											 <button type="button" class="btn btn-primary">Take Action</button></td>
 											</a><?php } ?></td>
 											<td colspan="4"> 
-											<a href="javascript:void(0);" onClick="popUpWindow('http://localhost/VHS/Mess admin/userprofile.php?uid=<?php echo htmlentities($row['userId']);?>');" title="Student Detials">
+											<a href="javascript:void(0);" onClick="popUpWindow('./userprofile.php?uid=<?php echo htmlentities($row['userId']);?>');" title="Student Detials">
 											 <button type="button" class="btn btn-primary">View Student Detials</button></a></td>
 											
 										</tr>
