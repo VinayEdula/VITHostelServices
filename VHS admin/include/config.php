@@ -1,6 +1,6 @@
 <?php
 
-$con = mysqli_connect("localhost:3399","root","","vhs");
+$con = mysqli_connect("remotemysql.com","eQc0Qn9CdB","3PAHTpU9TN","eQc0Qn9CdB");
 // Check connection
 if (mysqli_connect_errno())
 {
