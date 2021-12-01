@@ -10,6 +10,8 @@ $ret=mysqli_query($con,"SELECT * FROM Mess_Admin WHERE username='$username' and 
 $num=mysqli_fetch_array($ret);
 if($num>0)
 {
+
+	
 $extra="change-password.php";//
 $_SESSION['alogin']=$_POST['username'];
 $_SESSION['id']=$num['id'];
