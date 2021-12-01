@@ -12,7 +12,7 @@
 								</a>
 							</li>
 							<li>
-								<a href="http://localhost/VHS/users/registration.php">
+								<a href="./users/registration.php">
 									<i class="menu-icon icon-plus"></i>
 									Student Registration
 								</a>
