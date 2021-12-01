@@ -10,14 +10,12 @@ $ret=mysqli_query($con,"SELECT * FROM Mess_Admin WHERE username='$username' and 
 $num=mysqli_fetch_array($ret);
 if($num>0)
 {
-
-	
 $extra="change-password.php";//
 $_SESSION['alogin']=$_POST['username'];
 $_SESSION['id']=$num['id'];
 $host=$_SERVER['HTTP_HOST'];
 $uri=rtrim(dirname($_SERVER['PHP_SELF']),'/\\');
-header("location:https://vithostelservice.herokuapp.com/Mess%20admin/change-password.php");
+header("location:http://$host$uri/$extra");
 exit();
 }
 else
