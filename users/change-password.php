@@ -17,7 +17,7 @@ $sql=mysqli_query($con,"SELECT password FROM  users where password='".md5($_POST
 $num=mysqli_fetch_array($sql);
 if($num>0)
 {
- $con=mysqli_query($con,"update users set password='".md5($_POST['newpassword'])."', updationDate='$currentTime' where Registration_No='".$_SESSION['login']."'");
+ $con=mysqli_query($con,"UPDATE users SET password='".md5($_POST['newpassword'])."', updationDate='$currentTime' WHERE Registration_No='".$_SESSION['login']."'");
 $successmsg="Password Changed Successfully !!";
 }
 else
