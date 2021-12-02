@@ -59,7 +59,7 @@ exit();
 				
 					<ul class="nav pull-right">
 
-						<li><a href="http://localhost/VHS/" style="color : #ffffff; text-shadow: 0 1px 0 #000000; font-size:13px;">
+						<li><a href="./" style="color : #ffffff; text-shadow: 0 1px 0 #000000; font-size:13px;">
 						Back to Portal
 						
 						</a></li>
